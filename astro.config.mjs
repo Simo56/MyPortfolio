@@ -7,5 +7,6 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
 	site: 'https://Simo56.github.io',
   	base: '/MyPortfolio',
+	public: '/public',
 	integrations: [tailwind(), mdx(), image()],
 });
