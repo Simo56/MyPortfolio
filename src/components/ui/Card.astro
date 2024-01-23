@@ -3,6 +3,7 @@ import projectImage from '@assets/images/project.png';
 import ladonlogo from '@assets/images/ladoncloudagent_logo.png';
 import cryptonovusracing from '@assets/images/cryptonovusracing_logo.png';
 import aptTS from '@assets/images/apt-ts_logo.png';
+import AST-iPyNB_logo from '@assets/images/AST-iPyNB_logo.png'
 
 import { Image } from '@astrojs/image/components';
 import Tags from '@components/ui/Tags.astro';
@@ -27,7 +28,7 @@ const { url = '#', alt = 'Project image', description = 'Project Description', t
 		<a href={url} aria-label="link to project">
 			<div class="relative flex items-end overflow-hidden rounded-xl">
 				<Image
-					src={src == "ladoncloudagent.png" ? ladonlogo : src == "cryptonovusracing_logo.png" ? cryptonovusracing : src == "apt-ts_logo.png" ? aptTS : projectImage}
+					src={src == "ladoncloudagent.png" ? ladonlogo : src == "cryptonovusracing_logo.png" ? cryptonovusracing : src == "apt-ts_logo.png" ? aptTS : src == "AST-iPyNB_logo.png" ? AST-iPyNB_logo: projectImage}
 					alt={alt}
 					aspectRatio="4:4"
 					format="png"
